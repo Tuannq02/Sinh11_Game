@@ -1,4 +1,4 @@
-var questions = [
+var questions = [//câu dễ
   {
     quest: "Nhân tố nào gây sự biến động kích thước quần thể?",
     ans1: "A. Mức sinh sản",
@@ -36,17 +36,17 @@ var questions = [
   },
   {
     quest: "Kích thước của quần thể là?",
-    ans1: "A. Số lượng cá thể hoặc khối lượng trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó",
-    ans2: "B. Khối lượng hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó",
-    ans3: "C. Số lượng cá thể hoặc khối lượng hoặc năng lượng tích luỹ trong các cá thể trong khoảng không gian của quần thể",
-    ans4: "D. Số lượng cá thể hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó"
+    ans1: "A. Số lượng cá thể hoặc khối lượng trong các cá thể của quần thể có trong khoảng không gian sống",
+    ans2: "B. Khối lượng hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống",
+    ans3: "C. Số lượng cá thể hoặc khối lượng hoặc năng lượng tích luỹ trong các cá thể trong khoảng không gian sống",
+    ans4: "D. Số lượng cá thể hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống"
   },
   {
     quest: "Mật độ của quần thể là?",
     ans1: "A. Số lượng cá thể trung bình của quần thể được xác định trong một khoảng thời gian xác định nào đó",
     ans2: "B. Số lượng cá thể cao nhất ở một thời điểm xác định nào đó trong một đơn vị diện tích nào đó của quần thể",
     ans3: "C. Khối lượng sinh vật thấp nhất ở một thời điểm xác định trong một đơn vị thể tích của quần thể",
-    ans4: "D. số lượng cá thể có trên một đơn vị diện tích hay thể tích của quần thể"
+    ans4: "D. Số lượng cá thể có trên một đơn vị diện tích hay thể tích của quần thể"
   },
   {
     quest: "Một quần thể như thế nào là quần thể không sinh trưởng nhanh?",
@@ -54,7 +54,7 @@ var questions = [
     ans2: "B. Trong quần thể có kiểu phân bố tập trung",
     ans3: "C. Quần thể gần đạt sức chứa tối đa",
     ans4: "D. Quần thể có nhiều cá thể ở tuổi sau sinh sản hơn cá thể sinh sản"
-  },
+  },//câu tb
   {
     quest: "",
     ans1: "",
@@ -108,6 +108,9 @@ function show(btn){
   var numInfo = (num +1) * 10000;
   var numInfoString = numInfo.toString();
   document.getElementById(numInfoString).appendChild(questPara);
+  setTimeout(function(){
+    document.getElementById(numInfoString).remove();
+  },45000);
 
   var ans1 = questions[num].ans1;
   var ans2 = questions[num].ans2;
@@ -118,7 +121,6 @@ function show(btn){
   document.getElementById("ans3").innerHTML = ans3;
   document.getElementById("ans4").innerHTML = ans4;
 
-  
   time = 16;
   var countdown = setInterval(updatecountdown,1000);
   clearInterval(countdown);
@@ -138,42 +140,42 @@ var x3 = 0;
 var x4 = 0;
 
 function add1(){
-  var score1 = prompt("Scores ?") * 7;
+  var score1 = prompt("Scores ?") * 8;
   x1 = x1 + score1;
-  const canvas = document.getElementById("canvas");
-  const context1 = canvas.getContext("2d");
-  context1.fillStyle = "#30e3ca";
-  context1.fillRect(0,5,x1,25);
-  document.getElementById("score1").innerHTML = x1/7;
+    const canvas = document.getElementById("canvas");
+    const context1 = canvas.getContext("2d");
+    context1.fillStyle = "#30e3ca";
+    context1.fillRect(0,5,x1,25);
+    document.getElementById("score1").innerHTML = x1/8;
 }
 
 function add2(){
-  var score2 = prompt("Scores ?") * 7;
+  var score2 = prompt("Scores ?") * 8;
   x2 = x2 + score2;
   const canvas = document.getElementById("canvas");
   const context2 = canvas.getContext("2d");
   context2.fillStyle = "#faee1c";
   context2.fillRect(0,40,x2,25);
-  document.getElementById("score2").innerHTML = x2/7;
+  document.getElementById("score2").innerHTML = x2/8;
 }
 
 function add3(){
-  var score3 = prompt("Scores ?") * 7;
+  var score3 = prompt("Scores ?") * 8;
   x3 = x3 + score3;
   const canvas = document.getElementById("canvas");
   const context3 = canvas.getContext("2d");
   context3.fillStyle = "#ff1f5a";
   context3.fillRect(0,80,x3,25);
-  document.getElementById("score3").innerHTML = x3/7;
+  document.getElementById("score3").innerHTML = x3/8;
 }
 
 function add4(){
-  var score4 = prompt("Scores ?") * 7;
+  var score4 = prompt("Scores ?") * 8;
   x4 = x4 + score4;
   const canvas = document.getElementById("canvas");
   const context4 = canvas.getContext("2d");
   context4.fillStyle = "#9c1de7";
   context4.fillRect(0,120,x4,25);
-  document.getElementById("score4").innerHTML = x4/7;
+  document.getElementById("score4").innerHTML = x4/8;
 }
 
