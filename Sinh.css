@@ -1,0 +1,162 @@
+* {
+  font-family: "Questrial", sans-serif;
+  color: #5c5757;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 1850px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1850px;
+}
+
+.title {
+  border: 2.5px solid #848484;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.qaContainer {
+  /* outline: 2px solid black; */
+  margin-top: 30px;
+  height: 90vh;
+}
+
+.upHalf {
+  background-color: ;
+  width: 100%;
+  display: flex;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qContainer {
+  /* background-color: red; */
+  width: 66.2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.qBox1,
+.qBox2,
+.qBox3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2.5px solid #848484;
+  height: 180px;
+  width: 280px;
+}
+
+.qBox1:hover {
+  box-shadow: 10px 9px 35px -5px rgba(48, 227, 202, 1);
+}
+
+.qBox2:hover {
+  box-shadow: 10px 9px 35px -5px rgba(250, 238, 28, 1);
+}
+
+.qBox3:hover {
+  box-shadow: 10px 9px 35px -5px rgba(255, 31, 90, 1);
+}
+
+.qInfo {
+  /* background-color: yellow; */
+  width: 92%;
+  height: 70%;
+  margin-top: 15px;
+}
+
+.qInfo .level {
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qInfo p {
+  /* background-color: red; */
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.reward {
+  /* background-color: rgba(250, 238, 28, 1); */
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+}
+
+.qButton1,
+.qButton2,
+.qButton3 {
+  outline: none;
+  font-size: 20px;
+  border: 1.5px solid #848484;
+
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.qButton1 {
+  background-color: #30e3ca;
+}
+
+.qButton1:active {
+  background-color: #25ccb5;
+}
+
+.qButton2 {
+  background-color: #faee1c;
+}
+
+.qButton2:active {
+  background-color: #ded30f;
+}
+
+.qButton3 {
+  background-color: #ff1f5a;
+}
+
+.qButton3:active {
+  background-color: #db1045;
+}
+
+.asContainer {
+  /* background-color: yellow; */
+  width: 32.4%;
+}
+
+.aBox {
+  border: 2.5px solid #848484;
+  height: 93%;
+}
+
+.downHalf {
+  /* background-color: turquoise; */
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
