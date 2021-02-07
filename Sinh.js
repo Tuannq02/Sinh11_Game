@@ -93,6 +93,8 @@ var questions = [
  
 ]
 
+var time;
+
 function show(btn){
   var num = btn.id;
   var numLevel = num * 100;
@@ -111,14 +113,25 @@ function show(btn){
   var ans2 = questions[num].ans2;
   var ans3 = questions[num].ans3;
   var ans4 = questions[num].ans4;
-
-  
   document.getElementById("ans1").innerHTML = ans1;
   document.getElementById("ans2").innerHTML = ans2;
   document.getElementById("ans3").innerHTML = ans3;
   document.getElementById("ans4").innerHTML = ans4;
 
+  
+  time = 16;
+  var countdown = setInterval(updatecountdown,1000);
+  clearInterval(countdown);
 }
+
+function updatecountdown(){
+  if (time > 0){
+    time--;
+    document.getElementById("timer").innerHTML = time;
+  }
+}
+var countdown = setInterval(updatecountdown,1000);
+
 
 var x1 = 0;
 var x2 = 0;
