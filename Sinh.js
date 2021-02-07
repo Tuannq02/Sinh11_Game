@@ -35,25 +35,25 @@ var questions = [
     ans4: "D. Tỉ lệ đực – cái"
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
+    quest: "Kích thước của quần thể là?",
+    ans1: "A. Số lượng cá thể hoặc khối lượng trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó",
+    ans2: "B. Khối lượng hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó",
+    ans3: "C. Số lượng cá thể hoặc khối lượng hoặc năng lượng tích luỹ trong các cá thể trong khoảng không gian của quần thể",
+    ans4: "D. Số lượng cá thể hoặc năng lượng tích luỹ trong các cá thể của quần thể có trong khoảng không gian sống của quần thể đó"
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
+    quest: "Mật độ của quần thể là?",
+    ans1: "A. Số lượng cá thể trung bình của quần thể được xác định trong một khoảng thời gian xác định nào đó",
+    ans2: "B. Số lượng cá thể cao nhất ở một thời điểm xác định nào đó trong một đơn vị diện tích nào đó của quần thể",
+    ans3: "C. Khối lượng sinh vật thấp nhất ở một thời điểm xác định trong một đơn vị thể tích của quần thể",
+    ans4: "D. số lượng cá thể có trên một đơn vị diện tích hay thể tích của quần thể"
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
+    quest: "Một quần thể như thế nào là quần thể không sinh trưởng nhanh?",
+    ans1: "A. Trong quần thể có nhiều cá thể ở tuổi trước sinh sản hơn cá thể sinh sản",
+    ans2: "B. Trong quần thể có kiểu phân bố tập trung",
+    ans3: "C. Quần thể gần đạt sức chứa tối đa",
+    ans4: "D. Quần thể có nhiều cá thể ở tuổi sau sinh sản hơn cá thể sinh sản"
   },
   {
     quest: "",
@@ -92,7 +92,6 @@ var questions = [
   }
  
 ]
-  
 
 function show(btn){
   var num = btn.id;
@@ -112,13 +111,57 @@ function show(btn){
   var ans2 = questions[num].ans2;
   var ans3 = questions[num].ans3;
   var ans4 = questions[num].ans4;
-  var ans = document.creans1 + "\n" + ans2 + "\n" + ans3 + "\n" + ans4;
-  var ansPara = document.createElement('p');
-  var ansContent = document.createTextNode(ans);
-  ansPara.appendChild(ansContent);
-  document.getElementById().appendChild(ansPara);
-  
 
-  console.log(ans);
+  
+  document.getElementById("ans1").innerHTML = ans1;
+  document.getElementById("ans2").innerHTML = ans2;
+  document.getElementById("ans3").innerHTML = ans3;
+  document.getElementById("ans4").innerHTML = ans4;
 
 }
+
+var x1 = 0;
+var x2 = 0;
+var x3 = 0; 
+var x4 = 0;
+
+function add1(){
+  var score1 = prompt("Scores ?") * 7;
+  x1 = x1 + score1;
+  const canvas = document.getElementById("canvas");
+  const context1 = canvas.getContext("2d");
+  context1.fillStyle = "#30e3ca";
+  context1.fillRect(0,5,x1,25);
+  document.getElementById("score1").innerHTML = x1/7;
+}
+
+function add2(){
+  var score2 = prompt("Scores ?") * 7;
+  x2 = x2 + score2;
+  const canvas = document.getElementById("canvas");
+  const context2 = canvas.getContext("2d");
+  context2.fillStyle = "#faee1c";
+  context2.fillRect(0,40,x2,25);
+  document.getElementById("score2").innerHTML = x2/7;
+}
+
+function add3(){
+  var score3 = prompt("Scores ?") * 7;
+  x3 = x3 + score3;
+  const canvas = document.getElementById("canvas");
+  const context3 = canvas.getContext("2d");
+  context3.fillStyle = "#ff1f5a";
+  context3.fillRect(0,80,x3,25);
+  document.getElementById("score3").innerHTML = x3/7;
+}
+
+function add4(){
+  var score4 = prompt("Scores ?") * 7;
+  x4 = x4 + score4;
+  const canvas = document.getElementById("canvas");
+  const context4 = canvas.getContext("2d");
+  context4.fillStyle = "#9c1de7";
+  context4.fillRect(0,120,x4,25);
+  document.getElementById("score4").innerHTML = x4/7;
+}
+

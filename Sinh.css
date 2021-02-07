@@ -18,7 +18,7 @@ main {
   margin-top: 20px;
 }
 
-h3 {
+.title h3 {
   font-size: 25px;
   padding: 5px;
 }
@@ -142,21 +142,118 @@ h3 {
   background-color: #db1045;
 }
 
-.asContainer {
+.atsContainer {
   /* background-color: yellow; */
+  border: 2.5px solid #848484;
   width: 32.4%;
+  height: 393px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.atBox {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  height: 73%;
+  justify-content: space-between;
 }
 
 .aBox {
-  border: 2.5px solid #848484;
-  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 95%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.aBox p {
+  width: auto;
+}
+
+.tBox {
+  width: 20%;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tBox h2 {
+  text-align: center;
+}
+
+.timer {
+  /* background-color: blue; */
+  color: #07456f;
+}
+
+.sBox {
+  border-top: 2.5px solid #848484;
+  height: 26%;
+  font-size: 20px;
+}
+.grCanvasBox {
+  display: flex;
+  /* background-color: yellow; */
+  height: 86%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.btnBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.addButton {
+  text-align: center;
+  background-color: #e8ffe8;
+  border: none;
+  outline: none;
+  color: white;
+
+  width: 18px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.group {
+  margin-left: 10px;
+  /* background-color: red; */
+  line-height: 22px;
+}
+
+.canvas {
+  margin-left: 10px;
+  height: 98%;
+  width: 80%;
+  /* background-color: black; */
+  /* border: 2px solid gray; */
+}
+
+.scoreBoard {
+  /* background-color: red; */
+  margin-left: 10px;
+}
+
+.scoreBoard p {
+  font-size: 20px;
+  line-height: 22px;
+}
 .downHalf {
   /* background-color: turquoise; */
   height: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
 }

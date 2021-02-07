@@ -41,11 +41,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="2">Start</button>
+                        <button class="qButton1" id="2" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="30000">
+                            <div class="level" id="300">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -54,11 +54,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="3">Start</button>
+                        <button class="qButton1" id="3" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="40000">
+                            <div class="level" id="400">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -67,11 +67,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="4">Start</button>
+                        <button class="qButton1" id="4" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="50000">
+                            <div class="level" id="500">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -80,11 +80,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="5">Start</button>
+                        <button class="qButton1" id="5" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="60000">
+                            <div class="level" id="600">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -93,11 +93,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="6">Start</button>
+                        <button class="qButton1" id="6" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="70000">
+                            <div class="level" id="700">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -106,11 +106,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="7">Start</button>
+                        <button class="qButton1" id="7" onclick="show(this);">Start</button>
                     </div>
                     <div class="qBox1">
-                        <div class="qInfo">
-                            <div class="level">
+                        <div class="qInfo" id="80000">
+                            <div class="level" id="800">
                                 <div class="star">
                                     <img src="images/bluestar.png" alt="level">
                                 </div>
@@ -119,28 +119,41 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="qButton1" id="8">Start</button>
+                        <button class="qButton1" id="8" onclick="show(this);">Start</button>
                     </div>
 
                 </div>
-                <div class="asContainer">
-                    <div class="aBox">
-                        <div class="answer">
-
+                <div class="atsContainer">
+                    <div class="atBox">
+                        <div class="aBox">
+                            <p class="ans" id="ans1"></p>
+                            <p class="ans" id="ans2"></p>
+                            <p class="ans" id="ans3"></p>
+                            <p class="ans" id="ans4"></p>
                         </div>
-                        <div class="timer">
-
+                        <div class="tBox">
+                            <h2 class="timer" id="timer">15</h2>
                         </div>
                     </div>
                     <div class="sBox">
-                        <div class="group">
-
+                        <div class="grCanvasBox">
+                            <div class="btnBox">
+                                <button class="addButton" id="addButton1" onclick="add1();"><b>+</b></button>
+                                <button class="addButton" id="addButton2" onclick="add2();"><b>+</b></button>
+                                <button class="addButton" id="addButton3" onclick="add3();"><b>+</b></button>
+                                <button class="addButton" id="addButton4" onclick="add4();"><b>+</b></button>
+                            </div>
+                            <p class="group">Tổ 1 <br>Tổ 2 <br>Tổ 3 <br> Tổ 4</p>
+                            <canvas class="canvas" id="canvas"></canvas>
+                            <div class="scoreBoard">
+                                <p class="score" id="score1">0</p>
+                                <p class="score" id="score2">0</p>
+                                <p class="score" id="score3">0</p>
+                                <p class="score" id="score4">0</p>
+                            </div>
                         </div>
-                        <div class="scoreCanvas">
 
-                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="downHalf">
@@ -251,7 +264,7 @@
                                 <img src="images/redstar.png" alt="level">
                             </div>
                             <div class="reward">
-                                Số điểm: 4
+                                Số điểm: 6
                             </div>
                         </div>
                     </div>
