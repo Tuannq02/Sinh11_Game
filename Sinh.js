@@ -149,6 +149,8 @@ var questions = [//câu dễ
 
 var time;
 
+
+
 function show(btn){
   var num = btn.id;
   var numLevel = num * 100;
@@ -178,6 +180,9 @@ function show(btn){
   time = 16;
   var countdown = setInterval(updatecountdown,1000);
   clearInterval(countdown);
+
+  var audio = new Audio('Timer.mp3');
+  audio.play();
 }
 
 function updatecountdown(){
