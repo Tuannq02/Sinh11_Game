@@ -56,41 +56,95 @@ var questions = [//câu dễ
     ans4: "D. Quần thể có nhiều cá thể ở tuổi sau sinh sản hơn cá thể sinh sản"
   },//câu tb
   {
-    quest: "",
+    quest: "Khi nói về các đặc trưng cơ bản của quần thể sinh vật, phát biểu nào sau đây đúng?",
+    ans1: "A. Kích thước của quần thể không phụ thuộc vào điều kiện môi trường",
+    ans2: "B. Sự phân bố cá thể có ảnh hưởng tới khả năng khai thác nguồn sống trong môi trường",
+    ans3: "C. Mật độ cá thể của mỗi quần thể luôn ổn định, không thay đổi theo mùa, theo năm",
+    ans4: "D. Khi kích thước quần thể đạt mức tối đa thì tốc độ tăng trưởng của quần thể là lớn nhất"
+
+  },
+  {
+    quest: "Đâu không phải là nguyên nhân làm quần thể bị suy thoái dẫn đến diệt vong khi kích thước quần thể giảm xuống dưới mức tối thiểu?",
+    ans1: "A. Số lượng cá thể trong quần thể quá ít, hỗ trợ giữa các cá thể bị giảm, quần thể không chống chọi được với thay đổi của môi trường",
+    ans2: "B. Số lượng cá thể của quần thể ít, làm cho kẻ thù càng tăng cường tìm kiếm vì vậy số lượng của nó lại càng giảm nhanh hơn",
+    ans3: "C. Số lượng cá thể trong quần thể quá ít, khả năng sinh sản suy giảm do cơ hội gặp nhau của các cá thể đực với cá thể cái ít",
+    ans4: "D. Số lượng cá thể trong quần thể quá ít, hiện tượng giao phối gần xảy ra nhiều, các đặc điểm có hại ngày càng nhiều đe doạ sự tồn tại của quần thể"
+    // Câu B
+  },
+  {
+    quest: "Số phát biểu sai là?",
+    ans1: "A. Kích thước quần thể không thể vượt quá kích thước tối đa vì nếu quá lớn, cạnh tranh giữa các cá thể, ô nhiễm, bệnh tật tăng cao làm tăng tỉ lệ tử vong và một số cá thể sẽ di cư",
+    ans2: "B. Người ta ứng dụng mối quan hệ cạnh tranh giữa các cá thể của quần thể trong cả chăn nuôi và trồng trọt",
+    ans3: "C. Các cây thông trong rừng thông, đàn bò rừng, các loài cây gỗ sống trong rừng có các kiểu phân bố cùng là phân bố theo nhóm",
+    ans4: "D. Đặc điểm được xem là cơ bản nhất đối với quần thể là các cá thể cùng sinh sống trong một khoảng thời gian không xác định"
+    // 2 câu sai
+  },
+  {
+    quest: "Số phát biểu đúng là?",
+    ans1: "A. Kích thước quần thể giảm xuống dưới mức tối thiểu thì quần thể dễ dần tới diệt vong",
+    ans2: "B. Kích thước quần thể là khoảng không gian cần thiết để quần thể tồn tại và phát triển",
+    ans3: "C. Kích thước tối đa là giới hạn lớn nhất về số lượng mà quần thể có thể đạt được, phù hợp vói khả năng cung cấp nguồn sống của môi trường",
+    ans4: "D. Kích thước quần thể chỉ phụ thuộc vào mức sinh sản và mức tử vong của quần thể"
+    // 2 câu đúng
+  },
+  {
+    quest: "CONGRATULATIONS! YOU HAVE FOUND A LUCKY BALLOON",
     ans1: "",
     ans2: "",
     ans3: "",
     ans4: ""
   },
   {
-    quest: "",
+    quest: "Những yếu tố nào có liên quan đến mật độ cá thể của quần thể và làm giới hạn kích thước quần thể?",
+    ans1: "A. Sự cạnh tranh về nguồn thức ăn hoặc nơi sống giữa các cá thể trong quần thể",
+    ans2: "B. Các bệnh dịch truyền nhiễm",
+    ans3: "C. Tập tính ăn thịt",
+    ans4: "D. Tỉ lệ giới tính"
+    // A B C đúng
+  },
+  {
+    quest: "Quần thể nào dưới đây thường có kích thước quần thể lớn nhất?",
+    ans1: "A. Quần thể voi rừng",
+    ans2: "B. Quần thể chuột thảo nguyên",
+    ans3: "C. Quần thể ngựa vằn",
+    ans4: "D. Quần thể trâu rừng"
+  },
+  {//câu khó
+    quest: "CONGRATULATIONS! YOU HAVE FOUND A LUCKY BALLOON",
     ans1: "",
     ans2: "",
     ans3: "",
     ans4: ""
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
+    quest: "Trong một đầm lầy tự nhiên, cá chép, cá trê ăn ốc bươu vàng. Rái cá lại ăn cá chép. Do điều kiện khắc nghiệt, kích thước các quần thể đều giảm mạnh đến kích thước tối thiểu...",
+    ans1: "Một thời gian sau, nếu điều kiện môi trường thuận lợi trở lại thì quần thể nào sau đây có thể khôi phục kích thước nhanh nhất? <br><br>A. Quần thể cá trê",
+    ans2: "B. Quần thể rái cá",
+    ans3: "C. Quần thể cá chép",
+    ans4: "D. Quần thể ốc bươu vàng"
+  },
+  
+  {
+    quest: "Trong điều kiện môi trường giới hạn, sự tăng trưởng kích thước quần thể theo đường cong tăng trưởng thực tế có hình chữ S, ở giai đoạn đầu, số lượng cá thể tăng chậm...",
+    ans1: "Nguyên nhân chủ yếu của sự tăng chậm số lượng cá thể là? <br><br>A. số lượng cá thể của quần thể đang cân bằng với sức chịu đựng (sức chứa) của môi trường",
+    ans2: "B. Sự cạnh tranh giữa các cá thể trong quần thể diễn ra gay gắt",
+    ans3: "C. Nguồn sống của môi trường không đủ cho sự phát triển của quần thể",
+    ans4: "D. Kích thước của quần thể còn nhỏ dẫn đến tiềm năng sinh học của quần thể không đủ lớn"
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
+    quest: "Những thông tin nói về ý nghĩa của sự nhập cư hoặc di cư của những cá thể cùng loại từ quần thể này sang quần thể khác là?",
+    ans1: "A. Điều chỉnh số lượng cá thể của quần thể",
+    ans2: "B. Giảm bớt tính chất căng thẳng của sự cạnh tranh",
+    ans3: "C. Tăng khả năng sử dụng nguồn sống từ môi trường",
+    ans4: "D. Tìm nguồn sống mới phù hợp với từng cá thể"
   },
   {
-    quest: "",
-    ans1: "",
-    ans2: "",
-    ans3: "",
-    ans4: ""
-  }
- 
+    quest: "Số lượng cá thể của quần thể tăng cao khi?",
+    ans1: "A. Trong điều kiện môi trường thuận lợi, sức sinh sản của quần thể tăng lên và mức độ tử vong giảm, nhập cư cũng có thể tăng",
+    ans2: " B. Trong điều kiện môi trường thuận lợi, sức sinh sản của quần thể tăng lên và mức độ tử vong tăng, nhập cư cũng có thể tăng",
+    ans3: "C. Trong điều kiện môi trường thuận lợi, sức sinh sản của quần thể tăng lên và mức độ tử vong giảm, xuất cư cũng có thể tăng",
+    ans4: "D. Trong điều kiện môi trường thuận lợi, sức sinh sản của quần thể tăng lên và mức độ tử vong giảm, nhập cư cũng có thể giảm"
+  } 
 ]
 
 var time;

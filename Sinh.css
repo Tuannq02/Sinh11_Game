@@ -145,8 +145,8 @@ main {
 .atsContainer {
   /* background-color: yellow; */
   border: 2.5px solid #848484;
-  width: 32.4%;
-  height: 393px;
+  width: 32%;
+  height: 391px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,7 +167,7 @@ main {
   font-size: 20px;
   margin-top: 15px;
   width: 95%;
-  height: 75%;
+  height: 80%;
   margin-left: auto;
   margin-right: auto;
 }
